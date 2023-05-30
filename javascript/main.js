@@ -1,13 +1,10 @@
-function scrollToAnchor(event, anchor) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $("#" + anchor).offset().top - 50
-    }, 800);
-}
-
 function showBurgerMenu(event) {
     event.preventDefault();
     $("#menuwrap").toggle();
+}
+
+function dropdownMenu() {
+    $(".dropdown-menu").toggle();
 }
 
 $(document).ready(function() {
@@ -18,8 +15,8 @@ $(document).ready(function() {
         $("#slide1").fadeToggle("slow");
         $("#slide2").fadeToggle("slow");
     }
-    
     window.setInterval(toggleSlider, 8000);
+    $("#dropdownMenuButton").click(dropdownMenu);
 });
 
 $(document).scroll(function() {
