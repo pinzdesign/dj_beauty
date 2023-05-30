@@ -4,6 +4,7 @@ Author     : Ivan
 */
 /******************************************************************************/
 /* BASIC ELEMENTS */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Urbanist:wght@100&display=swap');
 
 body {
     background-color: #f0f0f0;
@@ -475,4 +476,155 @@ object-fit: cover;
 @media screen and (max-width: 320px) {
     .offgrid { top: 0px; }
     h1 a { font-size: 20px; }
+}
+
+/* No framework override */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.row-bottom {
+    display: flex;
+    gap: 0;
+}
+
+.col-lg-6, .col-sm-6, .col-md-6 {
+    width: 50%;
+}
+
+.col-lg-12 {
+    width: 100%;
+}
+
+.banner, .breaker, .bottom {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.content-box {
+    max-height: none;
+}
+
+.container-top {
+    margin-top: 30px;
+}
+
+#cont_left a, #cont_right a {
+    width: calc(100% - 90px);
+}
+
+.navbar-brand {
+    display: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-header {
+    width:10%;
+    float: left;
+}
+
+.navbar-nav li {
+    float: left;
+}
+
+.navbar-nav li a {
+    padding: 10px 30px;
+    display: block;
+    text-decoration: none;
+}
+
+.nav-dropdown {
+    display: none;
+}
+
+.nav-dropdown li {
+    clear: both;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 45px calc(100% - 45px);
+}
+
+.input-group-addon {
+    border: 1px solid tan;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 18px;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.form-control {
+    border: 1px solid tan;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 15px;
+    margin-left: -7px;
+}
+
+textarea {
+    min-height: 200px;
+    margin-left: 0 !important;
+    border-radius: 5px;
+    width: 100% !important;
+}
+
+.form-button {
+    color: fff;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Responsive fixup */
+@media screen and (max-width: 800px) {
+    .row, .row-bottom {
+        flex-direction: column;
+    }
+    .col-lg-6, .col-sm-6, .col-md-6 {
+        width: 100%;
+    }
+    .navbar-default {
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .banner-caption h4 {
+        display: none;
+    }
 }

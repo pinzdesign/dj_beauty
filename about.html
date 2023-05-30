@@ -4,15 +4,13 @@
         <title>DJ - Beautycare</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="plugins/jquery/jquery-2.2.3.min.js" type="text/javascript"></script>
-        <script src="plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <!--script src="plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/-->
         <script src="https://kit.fontawesome.com/ed11d827ab.js" crossorigin="anonymous"></script>
         <!--link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/-->
         <link href="style.css" rel="stylesheet" type="text/css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Urbanist:wght@100&display=swap" rel="stylesheet">
+        <meta name="robots" content="noindex">
     </head>
     <body>
         <div id="wrapper">
@@ -60,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container container-top">
                 <div class="row">
                     <div class="col-lg-6">
                         <div id="cont_left_img">
@@ -140,10 +138,7 @@
                                 </div>
 
                                 <textarea class="form-control" name="message" placeholder="Besked..."></textarea>
-
-                                <div class="input-group pull-right">
-                                    <input type="submit" value="SEND" name="submit_mail" class="form-button" />
-                                </div>
+                                <input type="submit" value="SEND" name="submit_mail" class="form-button" />
                             </form>
                         </div>
                     </div>
@@ -164,7 +159,7 @@
             </div>
             
             <div class="container-fluid">
-                <div class="row">
+                <div class="row-bottom">
                     
                     <div class="col-sm-6">
                         <div class="bottom">
@@ -191,46 +186,7 @@
             
         </div>
         
-        <script type="text/javascript">
-            function scrollToAnchor(event, anchor) {
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: $("#" + anchor).offset().top - 50
-                }, 800);
-            }
-
-            function showBurgerMenu(event) {
-                event.preventDefault();
-                $("#menuwrap").toggle();
-            }
-            
-            $(document).ready(function() {
-                
-                $(".banner-caption").fadeIn("slow");
-                
-                function toggleSlider() {
-                    $("#slide1").fadeToggle("slow");
-                    $("#slide2").fadeToggle("slow");
-                }
-                
-                window.setInterval(toggleSlider, 8000);
-            });
-            
-            $(document).scroll(function() {
-                var scroll = $(window).scrollTop();
-                
-                if(scroll >= 500) {
-                    $("#logo").css("width", "80px");
-                    $("#logo").css("height", "80px");
-                    $("#logo").css("margin-top", "0px");
-                }
-                else {
-                    $("#logo").css("width", "160px");
-                    $("#logo").css("height", "160px");
-                    $("#logo").css("margin-top", "-70px");
-                }
-            });
-        </script>
+        <script src="javascript/main.js" type="text/javascript"></script>
         
     </body>
 </html>
