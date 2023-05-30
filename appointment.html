@@ -10,6 +10,7 @@
         <script src="https://kit.fontawesome.com/ed11d827ab.js" crossorigin="anonymous"></script>
         <!--link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/-->
         <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/online.registration.css" rel="stylesheet" type="text/css"/>
         <meta name="robots" content="noindex">
     </head>
     <body>
@@ -45,8 +46,9 @@
                         <li><a href="contact.html">Contact us</a></li>
                     </ul>
                 </nav>
+                
             </div>
-
+            
             <div class="container-fluid">
                 <div class="jumbotron banner" >
                     <a class="appoint" href="appointment.html">Book an Appointment</a>
@@ -61,85 +63,49 @@
             
             <div class="container container-top">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div id="cont_left_img">
-                            <img src="img/wax-removing.jpg " alt="picture of women" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div id="cont_right">
-                            <h2>Wax - Removal</h2>
-                                    <p>
-                                        Smooth, clean skin. That is what you want in the warm season.
-                                        When wearing dresses, short sleeves, short pants, swimsuits, bikinis, 
-                                        the hair on legs, bikini area or in the armpits can be really undesirable.
-                                        It can be convenient to remove the hair by just using a razor, but - if you have 
-                                        to do it every day, the skin is constantly irritated and grows back after just a day 
-                                        or two. The solution to that is - Waxing!
-                                    </p>
-                                    <p>
-                                        Waxing can be done both at home and in the salon, and the excellent result can be enjoyed 
-                                        for 4, and sometimes even up to 6 weeks! The procedure itself is quite quick and any type
-                                        of hair is removed
-                                    </p>
-                                    <p>Waxing has many advantages over other hair removal methods:</p>
-                                    <ul>
-                                      <li>The procedure is FAST!</li>
-                                      <li>
-                                        Suitable for almost* all skin types.
-                                      </li>
-                                      <li>
-                                        Hair does not grow back for 4 to 6 weeks.
-                                      </li>
-                                      <li>
-                                        The hair grows back lighter, thinner and weaker
-                                         after each procedure. Over time, there are fewer and fewer hair growing back!
-                                      </li>
-                                      <li>
-                                        The skin after depilation is soft and smooth.
-                                      </li>
-                                      <li>
-                                        Bikini depilation is also done with wax. Although this is quite a sensitive area, 
-                                        wax is perfect for it. Even Brazilian depilation is available!
-                                      </li>
-                                      <li>
-                                        Removes all types of hair
-                                      </li>
-                                    </ul>
-                                    <i> *not suitable only for particularly sensitive, scaly skin.</i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 contact_question">
-                        <h4>Have a question? Write to us</h4>
-                        <p>If you have any questions regarding the services, please fill out the form and we will contact you as soon as possible.</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div id="contact_wrap">
-                            <form role="form" role="form" method="post" data-netlify="true">
-                            
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                    <input type="text" class="form-control" name="username" placeholder="Navn" required="required">
+                    <div class="col-lg-12">
+                        <div id="cont_appoint">
+                            <form>
+                                <div class="form" data-netlify="true">
+                                    <label for="full-name">First and Last name</label>
+                                    <input name="fname" type="text" required>
                                 </div>
-
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                    <input type="mail" class="form-control" name="usermail" placeholder="E-Mail" required="required">
+                                <div class="form">
+                                    <label for="phone-number">Phone number</label>
+                                    <input name="phone-number" type="tel" required>
                                 </div>
-
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-ticket"></i></span>
-                                    <input type="text" class="form-control" name="subject" placeholder="Emne" required="required">
+                                <div class="form">
+                                    <label for="email">E-mail</label>
+                                    <input name="email" type="email" required>
                                 </div>
-
-                                <textarea class="form-control" name="message" placeholder="Besked..."></textarea>
-
-                                <input type="submit" value="SEND" name="submit_mail" class="form-button" />
+                                <div class="form">
+                                    <label >Service</label>
+                                    <select name="liste">
+                                        <option value="">Choose Service</option>
+                                        <option value="eyelash">Eyelash Lifting</option>
+                                        <option value="eyebrow">Eyebrow Correction</option>
+                                        <option value="wax">Wax Removal</option>
+                                        <option value="make-up">Make-Up</option> 
+                                    </select>
+                                </div>
+                                <div class="form-1">
+                                    <label>Your Message</label>
+                                    <textarea name="besked"></textarea>
+                                </div>
+                                <div class="form">
+                                    <label for="date">Date</label>
+                                    <input name="date" type="date" required>
+                                </div>
+                                <div class="form">
+                                    <label for="time">Time</label>
+                                    <input name="time" type="time" required>
+                                </div>
+                                <div class="form-2">
+                                    <label for="agreement">I agree with the rules.</label>
+                                    <input name="agreement" type="checkbox" required></label>
+                                    <p>The rules are listed here <a target="blank" href="rules.html">https://dj-beautycare.dk/rules</a></p>
+                                </div>
+                                <button>Send</button>
                             </form>
                         </div>
                     </div>

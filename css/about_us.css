@@ -1,0 +1,167 @@
+body{
+    margin: 0%;
+}
+
+.btn_1{
+    background-color: #414924; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    margin: 40px;
+}
+
+.one_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    align-content: center;
+    margin-top:  30px;
+    margin-bottom: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.two{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(228, 228, 228, 0.753);
+}
+
+.three{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 40px;
+    margin-top:  30px;
+    margin-bottom: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.four{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top:  30px;
+    margin-bottom: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid_1-1-1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 15px;
+}
+
+.grid_3{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+.grid_3 img:hover{
+    opacity: 1;
+    animation: flash 1.5s;
+}
+
+.box_1, .box_2, .box_3{
+    background-color: rgba(228, 228, 228, 0.753);
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.box_1:hover{
+    opacity: 1;
+    animation: flash 1.5s;
+} 
+
+.box_2:hover{
+    opacity: 1;
+    animation: flash 1.5s;
+} 
+
+.box_3:hover{
+    opacity: 1;
+    animation: flash 1.5s;
+} 
+
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+img{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 15px;
+}
+
+h1, h2, h3, p{
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.two h2{
+    max-width: 600px;
+}
+
+.two p{
+    max-width: 600px;
+}
+
+@media (max-width: 900px){
+    body{
+        margin: 10px;
+    }
+    
+    .one{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .two{
+        display: grid;
+        grid-template-columns: 1fr 
+    }
+    
+    .three{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .grid_3{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
