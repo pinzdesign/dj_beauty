@@ -590,9 +590,13 @@ h5 {
     font-size: 17px;
 }
 
+#contact_wrap {
+    margin-bottom: 30px;
+}
+
 .form-control {
     border: 1px solid tan;
-    height: 40px;
+    height: 36px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     font-size: 15px;
@@ -649,7 +653,7 @@ textarea {
 }
 
 /* Responsive fixup */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .row, .row-bottom {
         flex-direction: column;
     }
@@ -659,10 +663,17 @@ textarea {
     .navbar-default {
         top: 0px;
     }
+    .banner-caption h4 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 560px) {
     .banner-caption h4 {
         display: none;
+    }
+    #cont_left a, #cont_right a {
+        position: static;
+        width: calc(100% - 30px);
     }
 }
